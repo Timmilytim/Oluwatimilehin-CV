@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-image: url(images/Backk.jpg);
+    background-attachment: fixed;
+    color: white;
+}
+:root{
+    --primary-color: #1252b1;
+    --text-color: #727171;
+}
+
+/*Common Styles*/m 
+img{
+    width: 100%;
+}
+h1{
+    color: white;
+}
+
+html{
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+    color:purple;
+}
+.description{
+    color: var(--text-color);
+    margin-top:1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.subheading{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    background: #1d1c1c;
+    padding: 5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    box-shadow: 0px 15px 30px rgba(31, 31, 31, 0.5);
+}
+
+.firstName{
+    color: white;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+.lastName{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+
+
+/*Profile*/
+
+.profile{
+    grid-column: -1 / 1;
+    margin-bottom: 1rem;
+}
+
+.profile_cont{
+    display: flex;
+    gap: 2rem;
+}
+.profileTitle{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.download-btn{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+.download-btn:hover{
+    color: var(--primary-color);
+}
+.skill_set{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 0.8cm;
+}
+
+/* Reference*/
+.refitem{
+    margin-top: 2rem;
+}
+.refname{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.eduitem{
+    margin-top: 2rem;
+}
+
+.pretitle{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.itemtitle{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+.itemsub{
+    font-size:1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.certification{
+    margin-top: 60px !important;
+
+}
+.certitem{
+    margin-top: 2rem;
+}
+
+.group1{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.group2{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/*AWARDS*/
+.awarditem{
+    margin-top: 2rem;
+}
+.intrestitems{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.intrestitem{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5;
+    color: var(--text-color);
+}
+
+hr{
+    grid-column: 1/-1;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    border-top: 2px solid rgba(128,128,128,0.229);
+}
+
+.group3{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.group3>div{
+    flex: 1;
+}
+
+.socialitems{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.socialitem{
+    color: var(--text-color);
+    padding: 5px;  
+}
+.socialitem:hover{
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+    hr{
+        margin: 0 auto;
+    }
+    .container{
+        width: 90%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+    .profile{
+        margin-bottom: 0;
+    }
+    .profile_cont{
+        flex-direction: column;
+    }
+    .lastName{
+        font-weight: 700;
+        font-size: clamp(2.5rem, 12vw, 7rem);
+    }
+    .group3{
+        flex-direction: column;
+    }
+    
+}
